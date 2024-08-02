@@ -13,8 +13,8 @@ class FavouriteQuoteScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          "CN Quotes",
-          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          "${controller.categoryFavoriteQuotesList[0].category!} Quotes",
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
@@ -35,22 +35,22 @@ class FavouriteQuoteScreen extends StatelessWidget {
                   children: [
                     Text(
                       controller.categoryFavoriteQuotesList[index].category!,
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Text(
                       controller.categoryFavoriteQuotesList[index].quote,
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Text(
                       "- ${controller.categoryFavoriteQuotesList[index].author}",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -63,7 +63,7 @@ class FavouriteQuoteScreen extends StatelessWidget {
                             border: Border.all(color: Colors.black,width: 2),
                             shape: BoxShape.circle
                           ),
-                          child: Icon(Icons.copy,size: 28,),
+                          child: const Icon(Icons.copy,size: 28,),
                         ),
                         Container(
                           alignment: Alignment.center,
@@ -73,11 +73,11 @@ class FavouriteQuoteScreen extends StatelessWidget {
                             border: Border.all(color: Colors.black,width: 2),
                             shape: BoxShape.circle
                           ),
-                          child: Icon(Icons.share,size: 28,),
+                          child: const Icon(Icons.share,size: 28,),
                         ),
                       ],
                     ),
-                    SizedBox(height: 30,)
+                    const SizedBox(height: 30,)
                   ],
                 ),
               ),
