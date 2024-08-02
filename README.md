@@ -1,7 +1,3 @@
-Here's a sample README file for your quotes app:
-
----
-
 # Quotes App
 
 ## Overview
