@@ -42,8 +42,6 @@ Quotes App is a Flutter application designed to provide users with an easy way t
   </p>
   </details>
 
-(Add screenshots of your app here)
-
 ## Installation
 
 To run this project, follow these steps:
